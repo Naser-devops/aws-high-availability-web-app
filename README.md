@@ -1,18 +1,20 @@
-# aws-high-availability-web-app
-Highly available AWS web infrastructure using EC2, ALB, Auto Scaling, and private/public subnets.
-# AWS High Availability Web Application
+# ☁️ AWS High Availability Web Application
 
-## Project Overview
-
-This project demonstrates a highly available and secure AWS web infrastructure architecture using multiple AWS services.
-
-The infrastructure was designed to host a web application using private EC2 instances behind an Application Load Balancer while maintaining secure networking practices.
+![Architecture](aws1.png)
 
 ---
 
-## Architecture Components
+# 📌 Project Overview
 
-### Networking
+This project demonstrates a secure and highly available AWS cloud architecture designed to host a web application using private EC2 instances behind an Application Load Balancer.
+
+The infrastructure follows production-style cloud architecture practices including networking isolation, load balancing, auto scaling, and secure access through a Bastion Host.
+
+---
+
+# 🏗️ Architecture Components
+
+## 🌐 Networking
 
 * Custom VPC
 * Public Subnets
@@ -21,51 +23,61 @@ The infrastructure was designed to host a web application using private EC2 inst
 * NAT Gateway
 * Route Tables
 
-### Security
+---
+
+## 🔐 Security
 
 * Security Groups
-* Bastion Host for secure SSH access
-* Private EC2 instances without public IP addresses
+* Bastion Host
+* Private EC2 Instances
+* Restricted SSH Access
 
-### Compute & Scaling
+---
+
+## ⚙️ Compute & Scaling
 
 * EC2 Instances
 * Launch Template
 * Auto Scaling Group (ASG)
 
-### Load Balancing
+---
+
+## 🚦 Load Balancing
 
 * Application Load Balancer (ALB)
 * Target Group
 * Health Checks
 
-### Web Server
+---
+
+## 🖥️ Web Server
 
 * Ubuntu Server
 * Nginx Web Server
 
 ---
 
-## Architecture Flow
+# 🔄 Architecture Flow
 
 Internet → Application Load Balancer → Private EC2 Instances
 
-The Application Load Balancer receives public traffic and distributes requests across private EC2 instances running Nginx.
+The Application Load Balancer distributes incoming traffic across private EC2 instances running Nginx in multiple Availability Zones.
 
 ---
 
-## Key Features
+# 🚀 Key Features
 
-✅ High Availability across multiple Availability Zones
-✅ Secure private infrastructure
-✅ Auto Scaling support
+✅ High Availability Architecture
+✅ Multi-AZ Deployment
+✅ Private Infrastructure
 ✅ Load Balancing
-✅ Bastion Host architecture
-✅ Production-style AWS networking setup
+✅ Auto Scaling
+✅ Bastion Host Access
+✅ Production-Style AWS Networking
 
 ---
 
-## Technologies Used
+# 🛠️ Technologies Used
 
 * AWS VPC
 * AWS EC2
@@ -77,32 +89,46 @@ The Application Load Balancer receives public traffic and distributes requests a
 
 ---
 
-## What I Learned
+# 📸 Project Screenshots
+
+## 🌐 VPC Architecture
+
+![VPC](aws2.png)
+
+---
+
+## 🚦 Load Balancer
+
+![ALB](AWS3.png)
+
+---
+
+## ❤️ Healthy Target Group
+
+![Target Group](aws4.png)
+
+---
+
+## 🖥️ Nginx Running Successfully
+
+![Nginx](aws5.png)
+
+---
+
+# 📚 What I Learned
 
 Through this project I gained hands-on experience with:
 
 * AWS Networking
 * Public vs Private Subnets
 * Linux Administration
+* Bastion Host Architecture
 * Load Balancers
 * Auto Scaling Groups
-* Bastion Host Architecture
 * Cloud Security Basics
 
 ---
 
-## Screenshots
-
-(Add your screenshots here)
-
-* AWS Architecture
-* Load Balancer
-* Target Group Health Checks
-* Nginx Running Successfully
-
----
-
-## Author
+# 👨‍💻 Author
 
 Naser
-
